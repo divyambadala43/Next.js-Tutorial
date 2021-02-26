@@ -9,19 +9,21 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <div>
-      <h1>Homepage</h1>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
-        laboriosam a earum, provident et quod repudiandae! Illo eaque sit at
-        nostrum, alias hic laudantium beatae eum ratione dolores quas quis
-        doloribus architecto reprehenderit unde necessitatibus rerum adipisci
-        repellendus. Perferendis, cupiditate blanditiis repellat debitis enim
-        pariatur necessitatibus rem nemo mollitia aperiam unde repudiandae
-        consectetur sunt! Officia aliquid adipisci voluptates debitis
-        accusantium.
+      <h1 className={styles.title}>Homepage</h1>
+      <p className={styles.text}>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic minus odio
+        quos culpa dolorem doloribus tempora provident voluptatum praesentium
+        quam Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic minus
+        odio quos?
       </p>
-      <Link href="/ninjas">
-      <a>See Ninja Listing</a>
+      <p className={styles.text}>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic minus odio
+        quos culpa dolorem doloribus tempora provident voluptatum praesentium
+        quam Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic minus
+        odio quos?
+      </p>
+      <Link href='/ninjas'>
+        <a className={styles.btn}>See Ninja Listing</a>
       </Link>
     </div>
   );
