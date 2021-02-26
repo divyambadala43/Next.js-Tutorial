@@ -8,23 +8,29 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div>
-      <h1 className={styles.title}>Homepage</h1>
-      <p className={styles.text}>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic minus odio
-        quos culpa dolorem doloribus tempora provident voluptatum praesentium
-        quam Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic minus
-        odio quos?
-      </p>
-      <p className={styles.text}>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic minus odio
-        quos culpa dolorem doloribus tempora provident voluptatum praesentium
-        quam Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic minus
-        odio quos?
-      </p>
-      <Link href='/ninjas'>
-        <a className={styles.btn}>See Ninja Listing</a>
-      </Link>
-    </div>
+    <>
+      <Head>
+        <title>Ninja List | Home</title>
+        <meta name="keywords" content="ninjas"/>
+      </Head>
+      <div>
+        <h1 className={styles.title}>Homepage</h1>
+        <p className={styles.text}>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic minus
+          odio quos culpa dolorem doloribus tempora provident voluptatum
+          praesentium quam Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit. Hic minus odio quos?
+        </p>
+        <p className={styles.text}>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic minus
+          odio quos culpa dolorem doloribus tempora provident voluptatum
+          praesentium quam Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit. Hic minus odio quos?
+        </p>
+        <Link href='/ninjas'>
+          <a className={styles.btn}>See Ninja Listing</a>
+        </Link>
+      </div>
+    </>
   );
 }
